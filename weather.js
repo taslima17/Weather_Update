@@ -4,7 +4,7 @@ const submit = () => {
     const inputValue = input.value;
     input.value = '';
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=13d4ed7ed8b802ca0e8e7936334c4820`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=13d4ed7ed8b802ca0e8e7936334c4820`;
     console.log(url);
     fetch(url)
         .then(res => res.json())
